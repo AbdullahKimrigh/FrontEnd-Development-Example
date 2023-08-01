@@ -5,19 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
     <title>Web Development Course</title>
 </head>
-<header>
-
-</header>
 
 <body>
-
+    <nav class="navbar">
+        <div class="logo">Personal Tracker</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li class="services">
+                    <a href="#Goals">Goals</a>
+                    <ul class="dropdown">
+                        <li><a href="/">Dropdown 1 </a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 3</a></li>
+                        <li><a href="/">Dropdown 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Contact">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="container">
+        <form id="front" action="">
+            <fieldset id="input">
+                <legend>Front End Development</legend>
+                <p><input type="checkbox" value="HTML" /> HTML</p>
+                <p><input type="checkbox" value="CSS" /> CSS</p>
+                <p><input type="checkbox" value="Bootstrap" /> Bootstrap</p>
+                <p><input type="checkbox" value="Tailwind" /> Tailwind</p>
+                <p><input type="checkbox" value="JavaScript" /> JavaScript</p>
+                <p><input type="checkbox" value="jQuery" /> jQuery</p>
+                <p><input type="checkbox" value="React" /> React</p>
+                <p><input type="checkbox" value="Angular" /> Angular</p>
+                <p><input type="checkbox" value="Vue" /> Vue</p>
+            </fieldset>
+            <fieldset id="input">
+                <legend>Back End Development</legend>
+                <p><input type="checkbox" value="JavaScript" /> JavaScript</p>
+                <p><input type="checkbox" value="Python" /> Python</p>
+                <p><input type="checkbox" value="PHP" /> PHP</p>
+                <p><input type="checkbox" value="Laravel" /> Laravel</p>
+                <p><input type="checkbox" value="MySQL" /> MySQL</p>
+                <p><input type="checkbox" value="MongoDB" /> MongoDB</p>
+            </fieldset>
+            <fieldset id="input">
+                <legend>DevOps</legend>
+                <p><input type="checkbox" value="AWS" /> AWS</p>
+                <p><input type="checkbox" value="Azure" /> Azure</p>
+                <p><input type="checkbox" value="GCP" /> GCP</p>
+                <p><input type="checkbox" value="Terraform" /> Terraform</p>
+                <p><input type="checkbox" value="Jenkins" /> Jenkins</p>
+                <p><input type="checkbox" value="Docker" /> Docker</p>
+                <p><input type="checkbox" value="Kubernetes" /> Kubernetes</p>
+                <p><input type="checkbox" value="Ansible" /> Ansible</p>
+            </fieldset>
+            <fieldset id="input">
+                <legend>MIS</legend>
+                <p><input type="checkbox" value="Office" /> MS Office</p>
+                <p><input type="checkbox" value="PowerBi" /> PowerBi</p>
+            </fieldset>
+            <button id="submit" type="submit">SAVE</button>
+        </form>
+    </div>
 </body>
-<footer>
 
+<footer class="footer">
+    <div id="copyright">
+        <h5>ALL RIGHTS RESERVED TO ABDULLAHKIMRIGH.NET <span>&copy;</span> 2024</h5>
+    </div>
 </footer>
 
 </html>
